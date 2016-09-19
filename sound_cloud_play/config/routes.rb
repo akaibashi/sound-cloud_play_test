@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'soundclouds/index'
+
   get 'react_test/index'
 
   get 'tests/index'

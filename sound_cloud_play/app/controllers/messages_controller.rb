@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
   def index
-    messages = Message.all
+#    messages = Message.all
+    messages = Message.find_by_sql(['select * from messages order by id desc'])
     render json: messages
   end
 

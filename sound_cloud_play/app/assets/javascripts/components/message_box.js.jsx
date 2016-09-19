@@ -38,6 +38,18 @@ console.log("parent!!");
 console.log("post success!");
 
         var newMessages = this.state.messages.concat(message);
+console.log(newMessages);
+        // sort
+        newMessages.sort(function(a, b){
+          if(a.id < b.id){
+            return 1;
+          }
+          if(a.id > b.id){
+            return -1;
+          }
+          return 0;
+        });
+
         this.setState({ messages: newMessages });
       }.bind(this),
       error: function(_xhr, status, err){
@@ -65,8 +77,8 @@ console.log("post failed!");
     }else{
       return (
         <div className="messageBox">
-          {messageItems}
           <MessageForm onTestFunc={this.testFunc} onHoge={this.handleMessageSubmit} />
+          {messageItems}
         </div>
       );
     }
