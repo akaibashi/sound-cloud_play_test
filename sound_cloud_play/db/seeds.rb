@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Message.delete_all
+Message.create!([
+  {user: 'hoge1', text: 'hoge1 text'},
+  {user: 'hoge2', text: 'hoge2 text'},
+  {user: 'hoge3', text: 'hoge3 text'}
+])

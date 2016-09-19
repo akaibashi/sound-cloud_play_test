@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  get 'react_test/index'
+
   get 'tests/index'
 
   get 'tests/show'
+
+  resources :messages, only: [:index, :create], format: 'json'
+  root 'react_test#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

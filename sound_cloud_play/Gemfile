@@ -45,3 +45,5 @@ group :development do
   gem 'spring'
 end
 
+# react
+gem 'react-rails', '~> 1.4.0'
