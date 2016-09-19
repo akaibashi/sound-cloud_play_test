@@ -47,3 +47,6 @@ end
 
 # react
 gem 'react-rails', '~> 1.4.0'
+
+# bootstrap
+gem 'bootstrap-sass'

@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html,body{margin:0px;padding:0px;}
+
+.center{
+  width: 100%;
+  text-align: center;
+}
+
+.header_title{
+  height: 80px;
+  color: #f50;
+}
+
+.soundcloudFormInput{
+  margin: 10px;
+  width: 600px;
+  height: 70px;
+  font-size: 20pt;
+  clear: both;
+}
+
+
+.soundcloudForm{
+  padding: 100px;
+}
+
+.soundcloud_item{
+  padding: 50px;
+  background-color: #333;
+}
+
+.soundcloudFormSubmitBtn{
+  
+}

@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'soundclouds/index'
-
-  get 'react_test/index'
+  get 'soundcloud/index'
+  get 'react_text/index'
 
   get 'tests/index'
 
   get 'tests/show'
 
   resources :messages, only: [:index, :create], format: 'json'
+  resources :soundclouds, only: [:index, :create], format: 'json'
   root 'react_test#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -11,3 +11,8 @@ Message.create!([
   {user: 'hoge2', text: 'hoge2 text'},
   {user: 'hoge3', text: 'hoge3 text'}
 ])
+
+Soundcloud.delete_all
+Soundcloud.create!([
+  {url: 'http://google.co.jp'}
+])
